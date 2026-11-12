@@ -1,5 +1,5 @@
 # ==============================================================================
-# PS-055: Recruitment ATS - Week 2 Sample Happy-Path Command Script
+# PS-055: Recruitment ATS - Sample Recruitment Workflow Command Script
 # Team T058: Baby V S (1AT24CG012) & Bhagyashree Rama Naik (1AT24CG013)
 # ==============================================================================
 

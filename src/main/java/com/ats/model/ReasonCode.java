@@ -2,7 +2,7 @@ package com.ats.model;
 
 /**
  * Standardized reason codes used across validation errors and stage transitions.
- * Aligns with Week 1 Design Document business rules (BR-01 through BR-07, BR-31, BR-38).
+ * Aligns with Week 1 Design Document business rules (BR-01 through BR-38).
  */
 public enum ReasonCode {
     SUCCESS,
@@ -12,6 +12,7 @@ public enum ReasonCode {
     DUPLICATE_CANDIDATE_ID,
     DUPLICATE_APPLICATION_ID,
     DUPLICATE_CANDIDATE_APPLICATION,
+    DUPLICATE_INTERVIEWER_ID,
 
     // Field & domain validation errors (BR-01, BR-02, BR-03)
     MISSING_REQUIRED_FIELD,
@@ -25,12 +26,15 @@ public enum ReasonCode {
     INVALID_STAGE,
     INVALID_INTERVIEW_ROUND,
     INVALID_SCORE,
+    INVALID_JOINING_DATE,
 
     // Entity lookup & state errors
     REQUISITION_NOT_FOUND,
     REQUISITION_CLOSED,
     CANDIDATE_NOT_FOUND,
     APPLICATION_NOT_FOUND,
+    INTERVIEWER_NOT_FOUND,
+    OFFER_NOT_FOUND,
 
     // Stage transition & gate errors (BR-04, BR-05, BR-06, BR-07, BR-31)
     SAME_STAGE_TRANSITION,
@@ -41,6 +45,25 @@ public enum ReasonCode {
     MISSING_INTERVIEW_SCORE,
     AUTO_REJECTED_LOW_SCORE,
     HEADCOUNT_EXHAUSTED,
+
+    // Interview Scheduling reason codes (BR-08 through BR-14)
+    NO_SLOT,
+    INSUFFICIENT_PANEL_GRADE,
+    DAILY_LIMIT_EXCEEDED,
+    OVERLAPPING_INTERVIEW,
+    INSUFFICIENT_INTERVIEW_GAP,
+
+    // Offer & Compensation reason codes (BR-15 through BR-23)
+    OUT_OF_BAND,
+    NOTICE_PERIOD_EXCEEDED,
+    OFFER_EXPIRED,
+
+    // Approval reason codes (BR-24 through BR-28)
+    APPROVAL_REJECTED,
+    APPROVAL_REQUIRED,
+    VP_APPROVAL_REQUIRED,
+    CFO_APPROVAL_REQUIRED,
+    TIMED_OUT,
 
     // Command file parser errors (BR-38)
     UNKNOWN_COMMAND,
