@@ -179,3 +179,16 @@ Confirm that all 4 CSV files have been written to `output\`:
 dir output
 type output\pipeline_report.csv
 ```
+7. Project Demo Video
+
+Project: Recruitment ATS with Interview Scheduling and Offer Approval Matrix
+
+Team ID: T058
+
+Project ID: PS-055
+
+Demo Duration: 5 Minutes
+
+Demo Video: "Watch the Project Demo" (https://drive.google.com/file/d/1qQzue14hpsNITGaiEd5zDvSJ9LKLNFD5/view)
+
+The video demonstrates the major features of the Recruitment ATS, including candidate tracking, interview scheduling, business rule validation, offer calculation, multi-level approval workflows, and automated recruitment processing.
